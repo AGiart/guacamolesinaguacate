@@ -10,10 +10,6 @@ public class Caso1 {
     public static void main(String[] args) {
         Automovil automovil = new Automovil();
         
-        
-        
-        
-        //isaac gei
        
         
         
@@ -23,6 +19,7 @@ public class Caso1 {
             String menu = "";
             menu = JOptionPane.showInputDialog("Ingrese la opcion que necesita(numero) \n1.Crear automovil \n2.Acelerar \n3.Desacelerar \n4.Calcular tiempo \n5.Mostrar informacion del automovil \n6.Salir");
             if(menu.equals("1")){
+                automovil.setmarca(JOptionPane.showInputDialog("Ingrese la marca del automovil"));
                 automovil.setmodelo(JOptionPane.showInputDialog("Ingrese el modelo del auto"));
                 automovil.setTcombustible(JOptionPane.showInputDialog("Ingrese el tipo de combustible del auto"));
                 automovil.setTauto(JOptionPane.showInputDialog("Ingrese el tipo de auto del auto"));
@@ -32,7 +29,7 @@ public class Caso1 {
                 
                 automovil.setVmax(vm);
                
-                automJOptionPane.showInputDialog("Ingrese el color del auto"));
+                automovil.setcolor(JOptionPane.showInputDialog("Ingrese el color del auto"));
                 String Vac = "0";
                 double va = Double.parseDouble(Vac);
                 Vac=JOptionPane.showInputDialog("Ingrese la Velocidad actual(la velocidad estara en km/h)");
